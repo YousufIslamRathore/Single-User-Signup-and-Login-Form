@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <fieldset data-aos="fade-in" data-aos-duration="3000">
+
+        <legend>Sign Up Form</legend>
+
+        
+        <form action="./login.html" onsubmit="setData()">
+
+
+            <label for="firstname">
+                <p>First Name:</p>
+                <input type="text" placeholder="Enter First Name" id="firstname" required>
+            </label>
+
+            <br><br>
+
+            <label for="lastname">
+                <p>Last Name:</p>
+                <input type="text" placeholder="Enter Last Name" id="lastname" required>
+            </label>
+
+            <br><br>
+
+            <label for="email">
+                <p>Email:</p>
+                <input type="email" placeholder="Enter Email Address" id="email" required>
+            </label>
+
+            <br><br>
+
+            <label for="password">
+                <p>Password:</p>
+                <input type="password" placeholder="Enter Password" id="password" maxlength="8" minlength="5" required>
+            </label>
+
+            <br><br>
+
+            <label for="contact">
+                <p>Contact:</p>
+                <input type="number" placeholder="Enter Contact Number" id="contact" required>
+            </label>
+
+            <br><br>
+
+            <div style="display: flex; justify-content: center;">
+                <!-- <button onclick="setData()"> Submit </button> -->
+                <button type="submit"> Submit </button>
+            </div>
+
+
+        </form>
+
+    </fieldset>
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();  
+</script>
+
+</html>
